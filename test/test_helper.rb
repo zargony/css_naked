@@ -1,3 +1,7 @@
 require 'rubygems'
+require 'test/unit'
 require 'active_support'
 require 'active_support/test_case'
+require 'mocha'
+require 'action_view'
+require 'css_naked'
