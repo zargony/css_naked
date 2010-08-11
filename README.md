@@ -12,9 +12,17 @@ helper to skip including stylesheets into the layout during the event.
 Install
 -------
 
-Just install the plugin and you're ready to go.
+Add the css_naked gem to your Rails application. With Rails 3.x, add the
+following to you `Gemfile`:
 
-    # ruby script/plugin install git://github.com/zargony/css_naked.git
+    gem 'css_naked'
+
+If you're using Rails 2.x without Bundler, you need to add `config.gem 'css_naked'`
+to `config/environments.rb` instead.
+
+If you previously used the css_naked plugin, you should remove it after
+switching to the gem by simply deleting the directory `vendor/plugins/css_naked`
+in your application.
 
 Manual usage
 ------------
