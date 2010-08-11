@@ -10,6 +10,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = 'This plugin makes a Rails application strip off the stylesheets during the CSS Naked Day event. It does this by modifying the stylesheet_link_tag helper to skip including stylesheets into the layout during the event.'
   gem.homepage = 'http://github.com/zargony/css_naked'
   gem.authors = ['Andreas Neuhaus']
+  gem.files << 'lib/rails/init.rb'
   gem.add_dependency 'activesupport'
   gem.add_dependency 'actionpack'
   gem.has_rdoc = false
