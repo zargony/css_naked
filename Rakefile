@@ -9,8 +9,8 @@ desc 'Test the css_naked plugin.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
   t.verbose = true
+  t.pattern = 'test/**/test_*.rb'
 end
 
 desc 'Generate documentation for the css_naked plugin.'
