@@ -14,16 +14,13 @@ module CssNaked
       end
     end
 
-    # Previous naked days: 2006-04-05, 2007-04-05, 2008-04-09
-    # Current naked day: 2009-04-09
-    # Future naked days unfortunately have to be updated manually
-    # since there's no strict rule to determine the exact date.
+    # Returns true if today is a css naked day (April 9th in any timezone)
+    # Previous naked days: 2006-04-05, 2007-04-05, 2008-04-09, 2009-04-09,
+    # 2010-04-09. Since 2008, all future naked days will be on April 9th.
     # See also http://naked.dustindiaz.com/
-    @@css_naked_date = Date.new(2009, 4, 9).to_time(:utc).freeze
-
-    # Returns true if today is a css naked day
     def css_naked?
-      Time.current >= @@css_naked_date - 12.hours && Time.current <= @@css_naked_date + 35.hours
+      start = Date.new(Time.current.year, 4, 9).to_time(:utc) - 12.hours
+      Time.current >= start && Time.current <= start + 47.hours
     end
 
     # Modified stylesheet_link_tag that does nothing on css naked day

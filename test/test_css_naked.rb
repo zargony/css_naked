@@ -11,7 +11,7 @@ class CssNakedTest < ActiveSupport::TestCase
   end
 
   def local_beginning_of_naked_day
-    Time.zone.local(2009, 4, 9)
+    Time.zone.local(Date.today.year + 2, 4, 9)
   end
 
   def test_naked_day_detection_early
