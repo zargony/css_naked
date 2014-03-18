@@ -20,10 +20,6 @@ following to you `Gemfile`:
 If you're using Rails 2.x without Bundler, you need to add `config.gem 'css_naked'`
 to `config/environments.rb` instead.
 
-If you previously used the css_naked plugin, you should remove it after
-switching to the gem by simply deleting the directory `vendor/plugins/css_naked`
-in your application.
-
 Manual usage
 ------------
 
