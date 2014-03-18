@@ -1,5 +1,4 @@
-CSS Naked Day Plugin for Rails
-==============================
+# CSS Naked Day Plugin for Rails
 
 CSS Naked Day is an annual event where websites remove all CSS from their
 site for one day to promote web standards. More information on this event
@@ -9,8 +8,7 @@ This plugin makes a Rails application strip off the stylesheets during the
 CSS Naked Day event. It does this by modifying the `stylesheet_link_tag`
 helper to skip including stylesheets into the layout during the event.
 
-Install
--------
+## Install
 
 Add the css_naked gem to your Rails application. With Rails 3.x, add the
 following to you `Gemfile`:
@@ -20,8 +18,7 @@ following to you `Gemfile`:
 If you're using Rails 2.x without Bundler, you need to add `config.gem 'css_naked'`
 to `config/environments.rb` instead.
 
-Manual usage
-------------
+## Manual usage
 
 If you manually need to do stuff on CSS Naked Day (e.g. skipping stylesheets
 you placed without using `stylesheet_link_tag` or adding a note for visitors
@@ -34,8 +31,7 @@ why the stylesheets are missing), you can use the `css_naked?` method:
       Annual CSS Naked Day</a> website for more information.</p>
     <%- end -%>
 
-Trying it out
--------------
+## Trying it out
 
 To see, how your site will look like without any styles, you can manually activate
 the CSS Naked Day mode by overriding the `css_naked?` in `application_helper.rb`:
@@ -44,8 +40,9 @@ the CSS Naked Day mode by overriding the `css_naked?` in `application_helper.rb`
       true
     end
 
-Author
-------
-[Andreas Neuhaus](http://zargony.com/)
+## Author
+
+Andreas Neuhaus - [zargony.com](http://zargony.com/)
+
 
 [homepage]: http://naked.threepixeldrift.com
