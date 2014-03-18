@@ -3,7 +3,7 @@ CSS Naked Day Plugin for Rails
 
 CSS Naked Day is an annual event where websites remove all CSS from their
 site for one day to promote web standards. More information on this event
-can be found on [Dustin's site][dustin].
+can be found on the [CSS Naked Day homepage][homepage].
 
 This plugin makes a Rails application strip off the stylesheets during the
 CSS Naked Day event. It does this by modifying the `stylesheet_link_tag`
@@ -34,7 +34,7 @@ why the stylesheets are missing), you can use the `css_naked?` method:
     <%- if css_naked? -%>
       <h3>What happened to the design?</h3>
       <p>To know more about why styles are disabled on this website visit the
-      <a href="http://naked.dustindiaz.com" title="Web Standards Naked Day Host Website">
+      <a href="http://naked.threepixeldrift.com" title="Web Standards Naked Day Host Website">
       Annual CSS Naked Day</a> website for more information.</p>
     <%- end -%>
 
@@ -52,4 +52,4 @@ Author
 ------
 [Andreas Neuhaus](http://zargony.com/)
 
-[dustin]: http://naked.dustindiaz.com
+[homepage]: http://naked.threepixeldrift.com

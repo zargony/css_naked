@@ -2,7 +2,7 @@
 # This Rails plugin overrides the stylesheet_link_tag helper and modifies
 # it to skip outputting stylesheet link tags on css naked day. Css naked
 # day is an annual event where websites remove all css from their site to
-# promote web standards. See http://naked.dustindiaz.com for more info.
+# promote web standards. See http://naked.threepixeldrift.com for more info.
 #
 module CssNaked
   module ViewHelpers
@@ -17,7 +17,7 @@ module CssNaked
     # Returns true if today is a css naked day (April 9th in any timezone)
     # Previous naked days: 2006-04-05, 2007-04-05, 2008-04-09, 2009-04-09,
     # 2010-04-09. Since 2008, all future naked days will be on April 9th.
-    # See also http://naked.dustindiaz.com/
+    # See also http://naked.threepixeldrift.com/
     def css_naked?
       start = Date.new(Time.current.year, 4, 9).to_time(:utc) - 12.hours
       Time.current >= start && Time.current <= start + 47.hours
