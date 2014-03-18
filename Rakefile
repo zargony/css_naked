@@ -26,9 +26,9 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 desc 'Generate documentation for the css_naked plugin.'
-Rake::RDocTask.new(:rdoc) do |rdoc|
+RDoc::Task.new(:rdoc) do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ''
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = "CSS Naked Day Rails Plugin #{version}"
